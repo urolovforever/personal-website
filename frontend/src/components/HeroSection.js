@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="mb-8 animate-slide-down">
           <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 shadow-2xl">
             <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-6xl font-bold text-primary-600 dark:text-primary-400">
-              YN
+              NU
             </div>
           </div>
         </div>
@@ -32,13 +32,13 @@ const HeroSection = () => {
         </h1>
 
         <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 animate-slide-up">
-          Full Stack Developer | Cybersecurity Enthusiast
+          Junior Web Developer | Cybersecurity Enthusiast
         </h2>
 
         {/* Tagline */}
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8 animate-fade-in">
-          Passionate about solving complex problems through elegant solutions. Skilled in
-          building scalable web applications with modern technologies and committed to applying cybersecurity best practices.
+          Passionate about building clean, responsive, and user-friendly websites.
+          Currently strengthening cybersecurity skills to create secure and efficient web applications.
         </p>
 
         {/* Social Links */}

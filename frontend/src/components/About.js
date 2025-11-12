@@ -5,18 +5,18 @@ const About = () => {
   const highlights = [
     {
       icon: FaCode,
-      title: 'Clean Code',
-      description: 'Writing maintainable and efficient code following best practices',
+      title: 'Responsive Design',
+      description: 'Creating clean, responsive, and cross-browser compatible websites',
     },
     {
       icon: FaLightbulb,
-      title: 'Problem Solver',
-      description: 'Finding creative solutions to complex technical challenges',
+      title: 'Critical Thinker',
+      description: 'Strong problem-solving and decision-making skills for complex challenges',
     },
     {
       icon: FaRocket,
-      title: 'Fast Learner',
-      description: 'Quickly adapting to new technologies and frameworks',
+      title: 'Team Player',
+      description: 'Excellent teamwork and multitasking abilities in collaborative environments',
     },
   ];
 
@@ -29,29 +29,29 @@ const About = () => {
           {/* Left side - Text content */}
           <div className="space-y-6">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Hello! I'm a passionate <span className="font-semibold text-primary-600 dark:text-primary-400">Full Stack Developer</span> with
-              experience in building web applications from concept to deployment. I love turning
-              complex problems into simple, beautiful, and intuitive solutions.
+              Hello! I'm a motivated <span className="font-semibold text-primary-600 dark:text-primary-400">Junior Web Developer</span> with
+              a passion for cybersecurity. I enjoy building clean, responsive, and user-friendly websites using
+              HTML, CSS, JavaScript, and Python.
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I specialize in <span className="font-semibold text-primary-600 dark:text-primary-400">modern web technologies</span> including
-              React, Django, Node.js, and more. I'm always eager to learn new technologies and
-              stay up-to-date with the latest industry trends.
+              Currently, I'm taking hands-on <span className="font-semibold text-primary-600 dark:text-primary-400">cybersecurity courses</span> to
+              strengthen my skills and create secure, efficient web applications. I'm always eager to learn new
+              technologies and improve with every project.
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to
-              open-source projects, or sharing knowledge with the developer community.
+              I'm fluent in <span className="font-semibold text-primary-600 dark:text-primary-400">English, Russian, Arabic, and Uzbek</span>,
+              which helps me collaborate effectively with diverse teams and understand different perspectives in problem-solving.
             </p>
 
             <div className="pt-4">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Fun Fact
+                Philosophy
               </h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 italic">
-                I believe the best code is the code you don't have to write. Simplicity is the
-                ultimate sophistication.
+                Security and user experience go hand-in-hand. I believe in creating applications that are
+                both beautiful and secure, making the web a safer place for everyone.
               </p>
             </div>
           </div>
