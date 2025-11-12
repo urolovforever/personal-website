@@ -1,5 +1,47 @@
 from django.contrib import admin
-from .models import Project
+from .models import Profile, Project
+
+
+@admin.register(Profile)
+class ProfileAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for Profile model.
+    """
+    list_display = ['name', 'email', 'phone', 'updated_at']
+    readonly_fields = ['created_at', 'updated_at']
+
+    fieldsets = (
+        ('Personal Information', {
+            'fields': ('name', 'title', 'bio', 'profile_image')
+        }),
+        ('Contact Information', {
+            'fields': ('email', 'phone', 'location')
+        }),
+        ('Social Media', {
+            'fields': ('github_url', 'linkedin_url', 'telegram_url')
+        }),
+        ('Files', {
+            'fields': ('cv_file',)
+        }),
+        ('Timestamps', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
+
+    def has_add_permission(self, request):
+        """
+        Only allow adding if no profile exists yet
+        """
+        if Profile.objects.exists():
+            return False
+        return super().has_add_permission(request)
+
+    def has_delete_permission(self, request, obj=None):
+        """
+        Prevent deletion of profile
+        """
+        return False
 
 
 @admin.register(Project)
