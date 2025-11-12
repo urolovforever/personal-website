@@ -5,10 +5,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/yourusername', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: FaTelegram, href: 'https://t.me/yourusername', label: 'Telegram' },
-    { icon: FaEnvelope, href: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: FaGithub, href: 'https://github.com/urolovforever', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/nizomjonurolov', label: 'LinkedIn' },
+    { icon: FaTelegram, href: 'tel:+998950393669', label: 'Phone' },
+    { icon: FaEnvelope, href: 'mailto:nizomjonurolov24@gmail.com', label: 'Email' },
   ];
 
   const quickLinks = [
@@ -29,10 +29,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Your Name</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Nizomjon Urolov</h3>
             <p className="text-gray-400 mb-4">
-              Full Stack Developer passionate about creating elegant solutions
-              to complex problems.
+              Junior Web Developer passionate about building secure and
+              user-friendly web applications.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -77,13 +77,21 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:nizomjonurolov24@gmail.com"
                   className="hover:text-primary-400 transition-colors duration-200"
                 >
-                  your.email@example.com
+                  nizomjonurolov24@gmail.com
                 </a>
               </li>
-              <li>Location: Your City, Country</li>
+              <li>
+                <a
+                  href="tel:+998950393669"
+                  className="hover:text-primary-400 transition-colors duration-200"
+                >
+                  +998 95-039-36-69
+                </a>
+              </li>
+              <li>Location: Pilla street, 78, Tashkent</li>
               <li>Available for freelance opportunities</li>
             </ul>
           </div>
@@ -92,7 +100,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Nizomjon Urolov. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm flex items-center gap-1">
             Made with <FaHeart className="text-red-500 w-4 h-4" /> using React & Django
