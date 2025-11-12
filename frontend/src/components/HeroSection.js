@@ -4,9 +4,9 @@ import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope, FaDownload } from 'react-
 const HeroSection = () => {
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/urolovforever', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/nizomjonurolov', label: 'LinkedIn' },
-    { icon: FaTelegram, href: 'tel:+998950393669', label: 'Phone' },
-    { icon: FaEnvelope, href: 'mailto:nizomjonurolov24@gmail.com', label: 'Email' },
+    { icon: FaLinkedin, href: 'https://linkedin.com/in/nizomjonurolov', label: 'LinkedIn' },
+    { icon: FaTelegram, href: 'https://t.me/urolovnizomjon', label: 'Telegram' },
+    { icon: FaEnvelope, href: 'mailto:nizomjonurolov24@@gmail.com', label: 'Email' },
   ];
 
   return (
