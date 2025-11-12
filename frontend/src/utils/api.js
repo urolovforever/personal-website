@@ -29,7 +29,8 @@ export const projectsAPI = {
   getAll: async () => {
     try {
       const response = await api.get('/projects/');
-      return response.data;
+      // Handle paginated response from Django REST Framework
+      return response.data.results || response.data;
     } catch (error) {
       console.error('Error fetching projects:', error);
       throw error;
