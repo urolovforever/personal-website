@@ -4,53 +4,82 @@ import { FaGraduationCap, FaBriefcase, FaCertificate } from 'react-icons/fa';
 const Resume = () => {
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University Name',
-      period: '2018 - 2022',
-      description: 'Focus on software engineering, algorithms, and data structures.',
+      degree: 'Bachelor\'s Degree in Computer Engineering',
+      institution: 'International Islamic Academy of Uzbekistan',
+      period: 'Sep 2022 - Jun 2026',
+      description: 'Full grant scholarship. Focus on Computer Engineering, IT Services, Information Security, and Multimedia Technologies. GPA: 4.31/5.0. Prize-winner of ICPC Uzbekistan algorithmic programming competition.',
+    },
+    {
+      degree: 'General Secondary Education',
+      institution: 'General Secondary School N60',
+      period: 'Sep 2011 - May 2022',
+      description: 'Graduated with silver medal. GPA: 5/5. Winner and prize-winner of Olympiads in Mathematics and Physics. Winner of chess tournament.',
     },
   ];
 
   const experience = [
     {
-      position: 'Senior Full Stack Developer',
-      company: 'Tech Company Inc.',
-      period: '2022 - Present',
-      description: 'Leading development of scalable web applications using React and Django.',
+      position: 'Web Developer (Part-time)',
+      company: '"SAMO-TOUR" MCHJ',
+      period: 'Jun 2025 - Present',
+      description: 'Developing and maintaining hotel website with integrated booking system.',
       achievements: [
-        'Improved application performance by 40%',
-        'Mentored junior developers',
-        'Implemented CI/CD pipeline',
+        'Developed responsive hotel website: www.westernsuiteshotel.com',
+        'Implemented booking system with CMS integration',
+        'Optimized performance, SEO, and mobile usability using HTML, CSS, JavaScript, and WordPress',
+        'Deployed site with SSL, domain setup, and analytics integration',
       ],
     },
     {
-      position: 'Full Stack Developer',
-      company: 'Startup XYZ',
-      period: '2020 - 2022',
-      description: 'Developed and maintained multiple client projects.',
+      position: 'Python Developer (Internship)',
+      company: 'Fido-Biznes Ltd',
+      period: 'Jan 2023 - Jan 2024',
+      description: 'Designed automation scripts and performed data analysis.',
       achievements: [
-        'Built 5+ production applications',
-        'Reduced bugs by 30% through testing',
-        'Collaborated with cross-functional teams',
+        'Designed Python automation scripts, increasing workflow efficiency by 15%',
+        'Performed data analysis and visualization using Pandas, NumPy, and Matplotlib',
+        'Reduced manual tasks through process automation and optimization',
+        'Collaborated with teams to prototype solutions for industry challenges',
+      ],
+    },
+    {
+      position: 'Event Organizer and Leader',
+      company: 'Istiqbolli avlod NGO',
+      period: '2022 - Jan 2023',
+      description: 'Organized events and advocated for human rights.',
+      achievements: [
+        'Planned and coordinated community events',
+        'Addressed client problems and provided solutions',
+        'Educated communities about human rights and human trafficking prevention',
       ],
     },
   ];
 
   const skills = {
-    'Frontend': ['React', 'JavaScript/TypeScript', 'HTML/CSS', 'Tailwind CSS', 'Redux'],
-    'Backend': ['Django', 'Node.js', 'Python', 'REST APIs', 'PostgreSQL'],
-    'Tools & Others': ['Git', 'Docker', 'AWS', 'CI/CD', 'Agile/Scrum'],
+    'Frontend & Design': ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Responsive Design', 'Cross-Browser Design', 'WordPress'],
+    'Backend & Programming': ['Python', 'Django', 'SQL', 'Database Management', 'REST APIs', 'Pandas', 'NumPy', 'Matplotlib'],
+    'Security & Tools': ['Linux', 'Bash', 'Command Line', 'Network Scanning', 'Nmap', 'Wireshark', 'Git'],
   };
 
   const certifications = [
     {
-      name: 'AWS Certified Developer',
-      issuer: 'Amazon Web Services',
+      name: 'ICPC Uzbekistan - Algorithmic Programming',
+      issuer: 'International Collegiate Programming Contest',
       year: '2023',
     },
     {
-      name: 'Professional Scrum Master',
-      issuer: 'Scrum.org',
+      name: 'Mathematics & Physics Olympiad Winner',
+      issuer: 'National Academic Competitions',
+      year: '2020-2022',
+    },
+    {
+      name: 'International Forums Participant',
+      issuer: 'Various International Organizations',
+      year: '2022-2024',
+    },
+    {
+      name: 'Full Grant Scholarship',
+      issuer: 'International Islamic Academy of Uzbekistan',
       year: '2022',
     },
   ];
@@ -152,11 +181,11 @@ const Resume = () => {
           </div>
         </div>
 
-        {/* Certifications Section */}
+        {/* Awards & Achievements Section */}
         <div>
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
             <FaCertificate className="text-primary-600 mr-4" />
-            Certifications
+            Awards & Achievements
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {certifications.map((cert, index) => (
