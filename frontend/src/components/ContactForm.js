@@ -178,7 +178,7 @@ const ContactForm = () => {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/urolovforever"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -187,7 +187,7 @@ const ContactForm = () => {
             </a>
             <span className="text-gray-400">•</span>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/nizomjonurolov"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -196,16 +196,14 @@ const ContactForm = () => {
             </a>
             <span className="text-gray-400">•</span>
             <a
-              href="https://t.me/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:+998950393669"
               className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
             >
-              Telegram
+              Phone
             </a>
             <span className="text-gray-400">•</span>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:nizomjonurolov24@gmail.com"
               className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
             >
               Email

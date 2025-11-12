@@ -3,10 +3,10 @@ import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope, FaDownload } from 'react-
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/yourusername', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: FaTelegram, href: 'https://t.me/yourusername', label: 'Telegram' },
-    { icon: FaEnvelope, href: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: FaGithub, href: 'https://github.com/urolovforever', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/nizomjonurolov', label: 'LinkedIn' },
+    { icon: FaTelegram, href: 'tel:+998950393669', label: 'Phone' },
+    { icon: FaEnvelope, href: 'mailto:nizomjonurolov24@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="mb-8 animate-slide-down">
           <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 shadow-2xl">
             <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-6xl font-bold text-primary-600 dark:text-primary-400">
-              YN
+              NU
             </div>
           </div>
         </div>
@@ -27,18 +27,18 @@ const HeroSection = () => {
         {/* Name & Title */}
         <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-slide-up">
           <span className="bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent">
-            Your Name
+            Nizomjon Urolov
           </span>
         </h1>
 
         <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 animate-slide-up">
-          Full Stack Developer
+          Junior Web Developer | Cybersecurity Enthusiast
         </h2>
 
         {/* Tagline */}
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8 animate-fade-in">
-          Passionate about creating elegant solutions to complex problems.
-          Specialized in building scalable web applications with modern technologies.
+          Passionate about building clean, responsive, and user-friendly websites.
+          Currently strengthening cybersecurity skills to create secure and efficient web applications.
         </p>
 
         {/* Social Links */}
