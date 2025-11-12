@@ -1,5 +1,29 @@
 from rest_framework import serializers
-from .models import Project
+from .models import Profile, Project
+
+
+class ProfileSerializer(serializers.ModelSerializer):
+    """
+    Serializer for Profile model with all fields.
+    """
+    class Meta:
+        model = Profile
+        fields = [
+            'id',
+            'name',
+            'title',
+            'bio',
+            'profile_image',
+            'email',
+            'phone',
+            'location',
+            'github_url',
+            'linkedin_url',
+            'telegram_url',
+            'cv_file',
+            'updated_at'
+        ]
+        read_only_fields = ['id', 'updated_at']
 
 
 class ProjectSerializer(serializers.ModelSerializer):
