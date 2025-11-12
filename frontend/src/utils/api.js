@@ -9,6 +9,20 @@ const api = axios.create({
   },
 });
 
+// Profile API
+export const profileAPI = {
+  // Get profile information
+  get: async () => {
+    try {
+      const response = await api.get('/profile/');
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching profile:', error);
+      throw error;
+    }
+  },
+};
+
 // Projects API
 export const projectsAPI = {
   // Get all projects
