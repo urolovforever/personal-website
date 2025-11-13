@@ -24,13 +24,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 dark:bg-black text-gray-300">
+    <footer className="bg-gray-50 dark:bg-gray-900 text-gray-700 dark:text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Nizomjon Urolov</h3>
-            <p className="text-gray-400 mb-4">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Nizomjon Urolov</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
               Junior Web Developer passionate about building secure and
               user-friendly web applications.
             </p>
@@ -41,7 +41,7 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg bg-gray-800 hover:bg-primary-600 transition-colors duration-200"
+                  className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-primary-600 transition-colors duration-200"
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5" />
@@ -52,7 +52,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -62,7 +62,7 @@ const Footer = () => {
                       e.preventDefault();
                       handleNavClick(link.href);
                     }}
-                    className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
+                    className="text-gray-600 dark:text-gray-400 hover:text-primary-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -73,8 +73,8 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Get In Touch</h4>
-            <ul className="space-y-2 text-gray-400">
+            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Get In Touch</h4>
+            <ul className="space-y-2 text-gray-600 dark:text-gray-400">
               <li>
                 <a
                   href="mailto:nizomjonurolov24@gmail.com"
@@ -98,11 +98,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
+        <div className="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 md:mb-0">
             © {currentYear} Nizomjon Urolov. All rights reserved.
           </p>
-          <p className="text-gray-400 text-sm flex items-center gap-1">
+          <p className="text-gray-600 dark:text-gray-400 text-sm flex items-center gap-1">
             Made with <FaHeart className="text-red-500 w-4 h-4" /> using React & Django
           </p>
         </div>
